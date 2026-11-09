@@ -1,7 +1,8 @@
 {application, p15_cluster_de_2_3_nodos, [
   {description, "Cluster de 2-3 nodos"},
   {vsn, "0.1.0"},
-  {registered, [p15_cluster_de_2_3_nodos_sup, p15_cluster_de_2_3_nodos_server]},
+  {registered, [p15_cluster_de_2_3_nodos_sup, p15_cluster_de_2_3_nodos_server,
+                p15_cluster_de_2_3_nodos_monitor, p15_cluster_de_2_3_nodos_eventos]},
   {mod, {p15_cluster_de_2_3_nodos_app, []}},
   {applications, [kernel, stdlib, cowboy, recon]},
   {env, []}
