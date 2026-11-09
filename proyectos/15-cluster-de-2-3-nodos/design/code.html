@@ -1,0 +1,425 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0b1326;color:#dae2fd;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#00344d", "primary-fixed": "#c9e6ff", "secondary-container": "#3131c0", "surface-container-low": "#131b2e", "on-secondary-fixed": "#07006c", "tertiary-container": "#00b17b", "on-tertiary-container": "#003b26", "on-error-container": "#ffdad6", "on-error": "#690005", "primary-container": "#0ea5e9", "on-secondary-container": "#b0b2ff", "inverse-primary": "#006591", "on-primary-fixed-variant": "#004c6e", "primary-fixed-dim": "#89ceff", "surface": "#0b1326", "error-container": "#93000a", "primary": "#89ceff", "surface-container-highest": "#2d3449", "secondary-fixed-dim": "#c0c1ff", "outline": "#88929b", "on-surface-variant": "#bec8d2", "on-tertiary-fixed": "#002113", "inverse-surface": "dae2fd", "secondary": "#c0c1ff", "on-tertiary-fixed-variant": "#005236", "outline-variant": "#3e4850", "on-primary-fixed": "#001e2f", "tertiary-fixed-dim": "#4edea3", "on-primary-container": "#003751", "surface-variant": "#2d3449", "surface-container-lowest": "#060e20", "background": "#0b1326", "surface-container": "#171f33", "inverse-on-surface": "#283044", "surface-container-high": "#222a3d", "error": "#ffb4ab", "on-background": "#dae2fd", "surface-dim": "#0b1326", "on-secondary": "#1000a9", "tertiary": "#4edea3", "surface-tint": "#89ceff", "surface-bright": "#31394d", "tertiary-fixed": "#6ffbbe", "on-tertiary": "#003824", "on-surface": "#dae2fd", "on-secondary-fixed-variant": "#2f2ebe", "secondary-fixed": "#e1e0ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-xl": "1.5rem", "space-lg": "1rem", "margin-desktop": "2rem", "space-2xl": "2rem" }, "fontFamily": { "headline-xl": ["Geist"], "headline-md": ["Geist"], "body-md": ["Geist"], "telemetry-mono": ["JetBrains Mono"], "telemetry-metric": ["JetBrains Mono"], "label-caps": ["JetBrains Mono"], "headline-lg": ["Geist"], "telemetry-code": ["JetBrains Mono"], "body-lg": ["Geist"], "body-sm": ["Geist"] }, "fontSize": { "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "telemetry-mono": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "telemetry-metric": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-caps": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "telemetry-code": ["11px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Logo Clúster Erlang" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrAsuRpXmPmNF2JT7tScog9Gmh67tefSs4Ev96q6tU-w9NCwUsjFzhd2Gh51TJ_h1yJXyoe1JUJ-HS9tyH4Z6wzpdO8zBEYW_OaaH2vqEKSWRho2EJbiV-Lh6Pyms2vH2c_awx7ZFdZIGvJs9ruca-ma3lAr9qwlw-PdPjGt2QzY4luDw7q__dRCM8nN1F-lgP0JABPzzWjN58KrKge9UF-ms4K966N3XNguVqCUMTa9"><div class="flex flex-col truncate"><span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Clúster de 3 nodos</span><span class="font-headline-md text-headline-md text-on-surface truncate leading-tight">Alertas</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-high"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-telemetry-code text-telemetry-code text-tertiary font-medium tracking-tight whitespace-nowrap">Quórum OK (3/3)</span></div><button aria-label="Actualizar telemetría" class="w-11 h-11 flex items-center justify-center rounded text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">refresh</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-1"><div class="flex flex-col w-full px-gutter py-space-md gap-space-lg">
+<!-- Quick Telemetry KPI Bar -->
+<section class="grid grid-cols-4 gap-space-xs bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col items-center justify-center p-space-xs rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Total Hoy</span>
+<span class="font-telemetry-metric text-[22px] leading-tight text-primary mt-0.5">38</span>
+<span class="font-telemetry-code text-[9px] text-outline">Eventos</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs rounded-lg bg-error-container/40">
+<span class="font-label-caps text-label-caps text-error uppercase">Fallas</span>
+<span class="font-telemetry-metric text-[22px] leading-tight text-error mt-0.5">2</span>
+<span class="font-telemetry-code text-[9px] text-error/80">Críticas</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs rounded-lg bg-surface-container-highest">
+<span class="font-label-caps text-label-caps text-[#fbbf24] uppercase">Alertas</span>
+<span class="font-telemetry-metric text-[22px] leading-tight text-[#fbbf24] mt-0.5">5</span>
+<span class="font-telemetry-code text-[9px] text-on-surface-variant">Avisos</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-xs rounded-lg bg-tertiary-container/30">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">Informativos</span>
+<span class="font-telemetry-metric text-[22px] leading-tight text-tertiary mt-0.5">31</span>
+<span class="font-telemetry-code text-[9px] text-tertiary-fixed-dim">Sincronía</span>
+</div>
+</section>
+<!-- Interactive Filters Group -->
+<section class="flex flex-col gap-space-sm">
+<!-- Timeframe & Node Quick Selectors -->
+<div class="flex items-center justify-between gap-space-sm">
+<!-- Time Range Selector -->
+<div class="flex items-center p-0.5 rounded-lg bg-surface-container-low shrink-0">
+<button class="time-btn px-2.5 py-1 rounded font-label-caps text-label-caps bg-primary text-on-primary font-semibold transition-all" data-range="1h" type="button">1 Hora</button>
+<button class="time-btn px-2.5 py-1 rounded font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" data-range="today" type="button">Hoy</button>
+<button class="time-btn px-2.5 py-1 rounded font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" data-range="7d" type="button">7 Días</button>
+</div>
+<!-- Node Origin Filter -->
+<div class="flex items-center gap-1 bg-surface-container-low px-1.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">device_hub</span>
+<select class="bg-transparent text-on-surface font-telemetry-code text-telemetry-code outline-none pr-1" id="nodeFilter">
+<option class="bg-surface-container text-on-surface" value="all">Todos nodos</option>
+<option class="bg-surface-container text-on-surface" value="n1">Nodo n1</option>
+<option class="bg-surface-container text-on-surface" value="n2">Nodo n2</option>
+<option class="bg-surface-container text-on-surface" value="n3">Nodo n3</option>
+</select>
+</div>
+</div>
+<!-- Event Type Horizontal Scroller -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-gutter px-gutter select-none no-scrollbar">
+<button class="chip-filter active whitespace-nowrap px-3 py-1.5 rounded-full font-label-caps text-label-caps bg-primary text-on-primary font-medium shrink-0 transition-colors shadow-sm" data-filter="all" type="button">
+        Todos (38)
+      </button>
+<button class="chip-filter whitespace-nowrap px-3 py-1.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 transition-colors" data-filter="caida" type="button">
+        Caída de nodo
+      </button>
+<button class="chip-filter whitespace-nowrap px-3 py-1.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 transition-colors" data-filter="reconexion" type="button">
+        Reconexión
+      </button>
+<button class="chip-filter whitespace-nowrap px-3 py-1.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 transition-colors" data-filter="lider" type="button">
+        Cambio de líder
+      </button>
+<button class="chip-filter whitespace-nowrap px-3 py-1.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 transition-colors" data-filter="escritura" type="button">
+        Escritura rechazada
+      </button>
+<button class="chip-filter whitespace-nowrap px-3 py-1.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface shrink-0 transition-colors" data-filter="resync" type="button">
+        Resincronización
+      </button>
+</div>
+</section>
+<!-- Bitácora Cronológica / Timeline Container -->
+<section class="flex flex-col relative mt-space-xs">
+<!-- Timeline Vertical Backbone (Connecting Line) -->
+<div class="absolute left-[19px] top-4 bottom-6 w-[2px] bg-surface-container-highest z-0"></div>
+<div class="flex flex-col gap-space-lg relative z-10" id="eventsTimeline">
+<!-- EVENTO 1 (Falla - Rojo) -->
+<article class="timeline-event flex gap-space-md" data-node="n3" data-type="escritura">
+<!-- Node Status Indicator Bubble -->
+<div class="flex flex-col items-center shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-md">
+<span class="w-3.5 h-3.5 rounded-full bg-error animate-pulse"></span>
+</div>
+<span class="font-telemetry-code text-[10px] text-error font-semibold mt-1">3m</span>
+</div>
+<!-- Event Card Content -->
+<div class="flex-1 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-caps text-[9px] bg-error-container text-error font-bold tracking-wider uppercase">Falla</span>
+<span class="px-1.5 py-0.5 rounded font-telemetry-code text-telemetry-code bg-surface-container-high text-primary font-medium">n3</span>
+<span class="font-telemetry-code text-telemetry-code text-outline truncate">Sin quórum</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline whitespace-nowrap">14:28:19</span>
+</div>
+<h3 class="font-headline-md text-[15px] leading-tight text-on-surface font-semibold mt-0.5">
+            Escritura rechazada por falta de quórum
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Intento de incremento en partición aislada: <span class="font-telemetry-code text-error">n3</span> solo ve 1 de 3 nodos y se requieren 2. Rechazado por falta de mayoría.</p>
+<!-- Collapsible Diagnostics Drawer -->
+<div class="event-details hidden flex-col gap-space-sm pt-space-sm mt-1 bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-outline font-telemetry-code text-[10px]">
+<span class="">PID: &lt;0.412.0&gt;</span>
+<span class="">Reason: {error, quorum_loss}</span>
+</div>
+<pre class="font-telemetry-code text-[10px] leading-tight text-error bg-surface-container-lowest p-2 rounded overflow-x-auto text-left whitespace-pre-wrap">GenServer.call(:cluster_registry, {:write, key_82, val}, 5000)
+** (EXIT) {quorum_lost, active_nodes: [:'n3@10.0.0.3']}</pre>
+<div class="flex items-center gap-space-xs pt-0.5">
+<button class="copy-btn flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span> Copiar JSON
+              </button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">bug_report</span> Ver Traza BEAM
+              </button>
+</div>
+</div>
+<!-- Card Footer Accordion Toggle -->
+<button class="toggle-details flex items-center justify-between pt-1 text-on-surface-variant hover:text-primary transition-colors text-left" type="button">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> Diagnóstico detallado
+            </span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 chevron-icon">expand_more</span>
+</button>
+</div>
+</article>
+<!-- EVENTO 2 (Alerta - Ámbar) -->
+<article class="timeline-event flex gap-space-md" data-node="n2" data-type="lider">
+<div class="flex flex-col items-center shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-md">
+<span class="w-3.5 h-3.5 rounded-full bg-[#fbbf24]"></span>
+</div>
+<span class="font-telemetry-code text-[10px] text-[#fbbf24] font-semibold mt-1">12m</span>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-caps text-[9px] bg-[#78350f] text-[#fde68a] font-bold tracking-wider uppercase">Alerta</span>
+<span class="px-1.5 py-0.5 rounded font-telemetry-code text-telemetry-code bg-secondary-container/40 text-secondary font-medium">n1 → n2</span>
+<span class="font-telemetry-code text-telemetry-code text-outline truncate">Líder por nombre</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline whitespace-nowrap">14:19:42</span>
+</div>
+<h3 class="font-headline-md text-[15px] leading-tight text-on-surface font-semibold mt-0.5">
+            Cambio de líder detectado
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed"><span class="font-telemetry-code text-on-surface">n1</span> dejó de responder. <span class="font-telemetry-code text-secondary font-semibold">n2</span> asume como líder: es el nodo de nombre menor entre los conectados.</p>
+<!-- Drawer -->
+<div class="event-details hidden flex-col gap-space-sm pt-space-sm mt-1 bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-outline font-telemetry-code text-[10px]"><span class="">Líder asignado: n2</span>
+<span class="">Nodos activos: 2/3 (n2, n3)</span></div>
+<pre class="font-telemetry-code text-[10px] leading-tight text-[#fbbf24] bg-surface-container-lowest p-2 rounded overflow-x-auto text-left whitespace-pre-wrap">{leader_election, name_priority, {elected, :'n2@10.0.0.2'}, quorum_granted}</pre>
+<div class="flex items-center gap-space-xs pt-0.5">
+<button class="copy-btn flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span> Copiar JSON
+              </button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">bug_report</span> Ver Traza BEAM
+              </button>
+</div>
+</div>
+<button class="toggle-details flex items-center justify-between pt-1 text-on-surface-variant hover:text-primary transition-colors text-left" type="button">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> Diagnóstico detallado
+            </span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 chevron-icon">expand_more</span>
+</button>
+</div>
+</article>
+<!-- EVENTO 3 (OK / Verde) -->
+<article class="timeline-event flex gap-space-md" data-node="n2" data-type="resync">
+<div class="flex flex-col items-center shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-md">
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-telemetry-code text-[10px] text-tertiary font-semibold mt-1">25m</span>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-caps text-[9px] bg-tertiary-container/80 text-on-tertiary font-bold tracking-wider uppercase">OK</span>
+<span class="px-1.5 py-0.5 rounded font-telemetry-code text-telemetry-code bg-surface-container-high text-primary font-medium">n2</span>
+<span class="font-telemetry-code text-telemetry-code text-outline truncate">Resincronización</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline whitespace-nowrap">14:06:05</span>
+</div>
+<h3 class="font-headline-md text-[15px] leading-tight text-on-surface font-semibold mt-0.5">
+            Nodo resincronizado exitosamente
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed"><span class="font-telemetry-code text-on-surface">n2</span> recibió el estado del líder y quedó en la versión <span class="font-telemetry-code text-tertiary">148</span>.</p>
+<!-- Drawer -->
+<div class="event-details hidden flex-col gap-space-sm pt-space-sm mt-1 bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-outline font-telemetry-code text-[10px]"><span class="">Versión: #148</span>
+<span class="">Estado sincronizado: 100%</span></div>
+<pre class="font-telemetry-code text-[10px] leading-tight text-tertiary bg-surface-container-lowest p-2 rounded overflow-x-auto text-left whitespace-pre-wrap">:mnesia.sync_log([from: 88190, to: 88204]) -&gt; :ok
+Checksum verified: SHA256(7e04f9)</pre>
+<div class="flex items-center gap-space-xs pt-0.5">
+<button class="copy-btn flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span> Copiar JSON
+              </button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">bug_report</span> Ver Traza BEAM
+              </button>
+</div>
+</div>
+<button class="toggle-details flex items-center justify-between pt-1 text-on-surface-variant hover:text-primary transition-colors text-left" type="button">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> Diagnóstico detallado
+            </span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 chevron-icon">expand_more</span>
+</button>
+</div>
+</article>
+<!-- EVENTO 4 (Falla - Rojo) -->
+<article class="timeline-event flex gap-space-md" data-node="n3" data-type="caida">
+<div class="flex flex-col items-center shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-md">
+<span class="w-3.5 h-3.5 rounded-full bg-error"></span>
+</div>
+<span class="font-telemetry-code text-[10px] text-error font-semibold mt-1">48m</span>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-caps text-[9px] bg-error-container text-error font-bold tracking-wider uppercase">Falla</span>
+<span class="px-1.5 py-0.5 rounded font-telemetry-code text-telemetry-code bg-surface-container-high text-primary font-medium">n3</span>
+<span class="font-telemetry-code text-telemetry-code text-outline truncate">net_ticktime Timeout</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline whitespace-nowrap">13:43:11</span>
+</div>
+<h3 class="font-headline-md text-[15px] leading-tight text-on-surface font-semibold mt-0.5">
+            Nodo caído (Desconexión de red)
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Nodo <span class="font-telemetry-code text-error">n3</span> no respondió al ping de monitorización. Quedan <span class="font-telemetry-code text-on-surface font-semibold">2 de 3</span> nodos: aún hay mayoría.</p>
+<!-- Drawer -->
+<div class="event-details hidden flex-col gap-space-sm pt-space-sm mt-1 bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-outline font-telemetry-code text-[10px]">
+<span class="">Kernel: ticktime_expired</span>
+<span class="">Socket: EHOSTUNREACH</span>
+</div>
+<pre class="font-telemetry-code text-[10px] leading-tight text-error bg-surface-container-lowest p-2 rounded overflow-x-auto text-left whitespace-pre-wrap">=ERROR REPORT==== 13:43:11 ===
+** Node :'n3@10.0.0.3' not responding to net_kernel tick.
+** Disconnecting node. Current cluster member count: 2</pre>
+<div class="flex items-center gap-space-xs pt-0.5">
+<button class="copy-btn flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span> Copiar JSON
+              </button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">bug_report</span> Ver Traza BEAM
+              </button>
+</div>
+</div>
+<button class="toggle-details flex items-center justify-between pt-1 text-on-surface-variant hover:text-primary transition-colors text-left" type="button">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> Diagnóstico detallado
+            </span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 chevron-icon">expand_more</span>
+</button>
+</div>
+</article>
+<!-- EVENTO 5 (OK / Verde) -->
+<article class="timeline-event flex gap-space-md" data-node="n3" data-type="reconexion">
+<div class="flex flex-col items-center shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-md">
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-telemetry-code text-[10px] text-tertiary font-semibold mt-1">55m</span>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-caps text-[9px] bg-tertiary-container/80 text-on-tertiary font-bold tracking-wider uppercase">OK</span>
+<span class="px-1.5 py-0.5 rounded font-telemetry-code text-telemetry-code bg-surface-container-high text-primary font-medium">n3</span>
+<span class="font-telemetry-code text-telemetry-code text-outline truncate">Reconexión</span>
+</div>
+<span class="font-telemetry-code text-[11px] text-outline whitespace-nowrap">13:36:58</span>
+</div>
+<h3 class="font-headline-md text-[15px] leading-tight text-on-surface font-semibold mt-0.5">
+            Nodo reconectado al clúster
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Erlang node <span class="font-telemetry-code text-on-surface">n3</span> reestableció conexión con <span class="font-telemetry-code text-primary">n1</span> y <span class="font-telemetry-code text-primary">n2</span>. Quórum restaurado a <span class="font-telemetry-code text-tertiary font-bold">3 de 3</span>.
+          </p>
+<!-- Drawer -->
+<div class="event-details hidden flex-col gap-space-sm pt-space-sm mt-1 bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-outline font-telemetry-code text-[10px]">
+<span class="">Handshake: Cookie match</span>
+<span class="">Dist: EPMD OK (:4369)</span>
+</div>
+<pre class="font-telemetry-code text-[10px] leading-tight text-tertiary bg-surface-container-lowest p-2 rounded overflow-x-auto text-left whitespace-pre-wrap">{net_kernel, nodeup, :'n3@10.0.0.3'}
+Cluster full membership: [:'n1@10.0.0.1', :'n2@10.0.0.2', :'n3@10.0.0.3']</pre>
+<div class="flex items-center gap-space-xs pt-0.5">
+<button class="copy-btn flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span> Copiar JSON
+              </button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-[10px]" type="button">
+<span class="material-symbols-outlined text-[13px]">bug_report</span> Ver Traza BEAM
+              </button>
+</div>
+</div>
+<button class="toggle-details flex items-center justify-between pt-1 text-on-surface-variant hover:text-primary transition-colors text-left" type="button">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> Diagnóstico detallado
+            </span>
+<span class="material-symbols-outlined text-[18px] transition-transform duration-200 chevron-icon">expand_more</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Empty State for Filters -->
+<div class="hidden flex-col items-center justify-center p-space-xl bg-surface-container-low rounded-xl text-center mt-space-md" id="emptyState">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-outline mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">filter_alt_off</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface font-semibold">Sin incidentes en este criterio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">El rango o nodo seleccionado no presenta anomalías registradas en la ventana actual.</p>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Toggle diagnostics accordions
+      const toggles = document.querySelectorAll('.toggle-details');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const card = toggle.closest('div');
+          const details = card.querySelector('.event-details');
+          const chevron = toggle.querySelector('.chevron-icon');
+          
+          if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+            details.classList.add('flex');
+            chevron.style.transform = 'rotate(180deg)';
+          } else {
+            details.classList.add('hidden');
+            details.classList.remove('flex');
+            chevron.style.transform = 'rotate(0deg)';
+          }
+        });
+      });
+
+      // Filter state logic
+      const chipFilters = document.querySelectorAll('.chip-filter');
+      const nodeFilter = document.getElementById('nodeFilter');
+      const timeButtons = document.querySelectorAll('.time-btn');
+      const events = document.querySelectorAll('.timeline-event');
+      const emptyState = document.getElementById('emptyState');
+
+      let currentTypeFilter = 'all';
+      let currentNodeFilter = 'all';
+
+      function applyFilters() {
+        let visibleCount = 0;
+
+        events.forEach(ev => {
+          const type = ev.getAttribute('data-type');
+          const node = ev.getAttribute('data-node');
+
+          const matchType = (currentTypeFilter === 'all' || type === currentTypeFilter);
+          const matchNode = (currentNodeFilter === 'all' || node === currentNodeFilter);
+
+          if (matchType && matchNode) {
+            ev.style.display = 'flex';
+            visibleCount++;
+          } else {
+            ev.style.display = 'none';
+          }
+        });
+
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      }
+
+      chipFilters.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chipFilters.forEach(c => {
+            c.classList.remove('bg-primary', 'text-on-primary', 'font-medium', 'active');
+            c.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          chip.classList.add('bg-primary', 'text-on-primary', 'font-medium', 'active');
+          currentTypeFilter = chip.getAttribute('data-filter');
+          applyFilters();
+        });
+      });
+
+      nodeFilter.addEventListener('change', (e) => {
+        currentNodeFilter = e.target.value;
+        applyFilters();
+      });
+
+      timeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          timeButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+          btn.classList.remove('text-on-surface-variant');
+        });
+      });
+
+      // Quick Copy Toast Simulation
+      const copyButtons = document.querySelectorAll('.copy-btn');
+      copyButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const origText = btn.innerHTML;
+          btn.innerHTML = '<span class="material-symbols-outlined text-[13px] text-tertiary">check</span> Copiado';
+          setTimeout(() => {
+            btn.innerHTML = origText;
+          }, 1500);
+        });
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-surface-container-high/60"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] h-12 px-space-md rounded text-on-surface-variant transition-colors group" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">speed</span><span class="font-label-caps text-label-caps mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[44px] h-12 px-space-md rounded text-on-surface-variant transition-colors relative group" data-path="nodo-n1" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">dns</span><span class="absolute -top-1 -right-4 px-1 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[9px] uppercase tracking-tighter leading-none">Líder</span></div><span class="font-label-caps text-label-caps mt-0.5">Nodo n1</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] h-12 px-space-md rounded transition-colors relative group text-primary bg-surface-container-high/60" data-path="alertas" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute -top-1 -right-2 px-1 py-0.2 rounded bg-tertiary-container text-on-tertiary-container font-label-caps text-[9px] font-bold leading-none">0</span></div><span class="font-label-caps text-label-caps mt-0.5">Alertas</span></a></div></nav>
+
+</body></html>

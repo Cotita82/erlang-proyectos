@@ -1,0 +1,389 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0b1326;color:#dae2fd;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#00344d", "primary-fixed": "#c9e6ff", "secondary-container": "#3131c0", "surface-container-low": "#131b2e", "on-secondary-fixed": "#07006c", "tertiary-container": "#00b17b", "on-tertiary-container": "#003b26", "on-error-container": "#ffdad6", "on-error": "#690005", "primary-container": "#0ea5e9", "on-secondary-container": "#b0b2ff", "inverse-primary": "#006591", "on-primary-fixed-variant": "#004c6e", "primary-fixed-dim": "#89ceff", "surface": "#0b1326", "error-container": "#93000a", "primary": "#89ceff", "surface-container-highest": "#2d3449", "secondary-fixed-dim": "#c0c1ff", "outline": "#88929b", "on-surface-variant": "#bec8d2", "on-tertiary-fixed": "#002113", "inverse-surface": "dae2fd", "secondary": "#c0c1ff", "on-tertiary-fixed-variant": "#005236", "outline-variant": "#3e4850", "on-primary-fixed": "#001e2f", "tertiary-fixed-dim": "#4edea3", "on-primary-container": "#003751", "surface-variant": "#2d3449", "surface-container-lowest": "#060e20", "background": "#0b1326", "surface-container": "#171f33", "inverse-on-surface": "#283044", "surface-container-high": "#222a3d", "error": "#ffb4ab", "on-background": "#dae2fd", "surface-dim": "#0b1326", "on-secondary": "#1000a9", "tertiary": "#4edea3", "surface-tint": "#89ceff", "surface-bright": "#31394d", "tertiary-fixed": "#6ffbbe", "on-tertiary": "#003824", "on-surface": "#dae2fd", "on-secondary-fixed-variant": "#2f2ebe", "secondary-fixed": "#e1e0ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-xl": "1.5rem", "space-lg": "1rem", "margin-desktop": "2rem", "space-2xl": "2rem" }, "fontFamily": { "headline-xl": ["Geist"], "headline-md": ["Geist"], "body-md": ["Geist"], "telemetry-mono": ["JetBrains Mono"], "telemetry-metric": ["JetBrains Mono"], "label-caps": ["JetBrains Mono"], "headline-lg": ["Geist"], "telemetry-code": ["JetBrains Mono"], "body-lg": ["Geist"], "body-sm": ["Geist"] }, "fontSize": { "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "telemetry-mono": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "telemetry-metric": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-caps": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "telemetry-code": ["11px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Logo Clúster Erlang" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrAsuRpXmPmNF2JT7tScog9Gmh67tefSs4Ev96q6tU-w9NCwUsjFzhd2Gh51TJ_h1yJXyoe1JUJ-HS9tyH4Z6wzpdO8zBEYW_OaaH2vqEKSWRho2EJbiV-Lh6Pyms2vH2c_awx7ZFdZIGvJs9ruca-ma3lAr9qwlw-PdPjGt2QzY4luDw7q__dRCM8nN1F-lgP0JABPzzWjN58KrKge9UF-ms4K966N3XNguVqCUMTa9"><div class="flex flex-col truncate"><span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Clúster de 3 nodos</span><span class="font-headline-md text-headline-md text-on-surface truncate leading-tight">Dashboard</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-high"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-telemetry-code text-telemetry-code text-tertiary font-medium tracking-tight whitespace-nowrap">Quórum OK (3/3)</span></div><button aria-label="Actualizar telemetría" class="w-11 h-11 flex items-center justify-center rounded text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">refresh</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-1"><div class="flex flex-col w-full px-gutter py-space-md gap-space-lg">
+<!-- TOP BANNER DE ILUSTRACIÓN TELEMÉTRICA -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-container-low flex flex-col justify-end p-space-md shadow-md">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-screen" data-alt="Futuristic dark Erlang distributed node topology network interface with glowing cyan and emerald telemetry traces, high precision actor system dashboard, dark graphite aesthetics, 8k render." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA7UhnqAn6kSxWZ-q8rms7PQSGbs8Vbhokh79mUFG29pdiWYz40T4AUYVe1u7fj_LN2IMBZlpJvgTsdM7UVTa_gj8B8h3UV4D10F1WM0Tqak08n8P7w6LCmNpSPpIYzwXYtOpSxeWL9Xsjn1lcXizadjDqxWSAqqmBhhCGJLyeSLtwAFqjam5jJDpkLGHcCi5vrk3EXdoWV6w0Ln23ChM2UEc05K0OIO_3VQpB4xSY&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/70 to-transparent"></div>
+<div class="relative z-10 flex items-end justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block">Quórum por mayoría (2 de 3)</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Contador Sincronizado Global</h2>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container text-tertiary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="">BEAM ACTIVO</span>
+</div>
+</div>
+</div>
+<!-- PANEL HERO: ESTADO DE QUÓRUM Y CONTROL -->
+<section class="flex flex-col w-full bg-surface-container rounded-xl p-space-md gap-space-md shadow-md relative overflow-hidden">
+<!-- Ambient micro glow -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-tertiary/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Cabecera de Quórum -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">hub</span>
+<span class="font-headline-md text-headline-md text-on-surface">Estado del Quórum</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps transition-all duration-300" id="quorum-badge">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
+</span>
+<span id="quorum-badge-text" class="">ACEPTA ESCRITURAS</span>
+</div>
+</div>
+<!-- Indicador Visual Central de Quórum -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-metric text-telemetry-metric text-on-surface" id="quorum-nodes-metric">3/3</span>
+<span class="font-body-md text-body-md text-on-surface-variant">nodos conectados</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary px-2 py-0.5 rounded bg-surface-container-high" id="quorum-status-pill">MAYORÍA ACTIVA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="quorum-explainer">Mayoría mínima requerida: 2 de 3 nodos tolera la caída de 1 nodo</p>
+<!-- Barras de Nodos Conectados -->
+<div class="grid grid-cols-3 gap-1.5 mt-space-xs">
+<div class="h-2 rounded bg-tertiary transition-colors duration-300" id="bar-n1"></div>
+<div class="h-2 rounded bg-tertiary transition-colors duration-300" id="bar-n2"></div>
+<div class="h-2 rounded bg-tertiary transition-colors duration-300" id="bar-n3"></div>
+</div>
+</div>
+<!-- Módulo de Simulación de Partición (Interactive Delight) -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">alt_route</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface uppercase">Simulador Split-Brain</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Forzar partición de red aislada</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded bg-surface-container-highest text-on-surface hover:text-primary font-telemetry-mono text-telemetry-mono transition-colors flex items-center gap-1 active:scale-95" id="partition-toggle">
+<span id="toggle-label" class="">Aislar (1/3)</span>
+</button>
+</div>
+</section>
+<!-- ACCIÓN PRIMARIA: INCREMENTAR CONTADOR ATÓMICO -->
+<section class="flex flex-col w-full gap-space-sm">
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-primary text-on-primary shadow-lg hover:brightness-105 active:scale-[0.98] transition-all duration-150" id="increment-btn">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-on-primary/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">exposure_plus_1</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-headline-md text-headline-md font-semibold leading-tight">Incrementar Contador</span>
+<span class="font-label-caps text-label-caps opacity-80 uppercase tracking-wider">Escritura confirmada por mayoría</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-on-primary/20 font-telemetry-mono text-telemetry-mono font-bold">
+<span class="">+1</span>
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+</div>
+</button>
+<!-- Estado de Escritura Dinámico -->
+<div class="flex items-center gap-2 p-space-sm rounded-lg bg-tertiary-container/30 text-tertiary transition-all duration-300" id="write-banner">
+<span class="material-symbols-outlined text-[18px]" id="write-icon">lock_open</span>
+<span class="font-body-sm text-body-sm leading-tight text-on-surface" id="write-msg">Escrituras habilitadas: El clúster cuenta con quórum mayoritario y el clúster acepta escrituras.</span>
+</div>
+</section>
+<!-- MÉTRICAS DE REPLICACIÓN DE BAJA LATENCIA -->
+<section class="flex flex-col w-full bg-surface-container-low rounded-xl p-space-md gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<span class="font-headline-md text-headline-md text-on-surface">Latencia Inter-Nodo</span>
+</div>
+<div class="flex items-center gap-1 font-telemetry-mono text-telemetry-mono text-tertiary">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span class="">&lt; 5 ms OK</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between p-space-sm rounded bg-surface-container">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Latencia promedio</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-telemetry-metric text-telemetry-metric text-primary" id="metric-avg-latency">1.4</span>
+<span class="font-telemetry-mono text-telemetry-mono text-primary">ms</span>
+</div>
+</div>
+<!-- Micro Sparkline SVG -->
+<div class="w-32 h-10 flex items-center justify-end">
+<svg class="w-full h-full text-primary" fill="none" viewBox="0 0 100 30">
+<path d="M0 20 L20 18 L35 24 L50 12 L65 15 L80 8 L100 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<circle class="fill-tertiary" cx="100" cy="14" r="3"></circle>
+</svg>
+</div>
+</div>
+<!-- Malla de Enlaces de Replicación -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-telemetry-code text-telemetry-code text-on-surface-variant">
+<span class="">Enlace n1 ↔ n2</span>
+<span class="text-tertiary font-medium">1.2 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded overflow-hidden">
+<div class="h-full bg-tertiary rounded" style="width: 24%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-telemetry-code text-telemetry-code text-on-surface-variant">
+<span class="">Enlace n1 ↔ n3</span>
+<span class="text-tertiary font-medium">1.6 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded overflow-hidden">
+<div class="h-full bg-tertiary rounded" style="width: 32%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-telemetry-code text-telemetry-code text-on-surface-variant">
+<span class="">Enlace n2 ↔ n3</span>
+<span class="text-tertiary font-medium">1.3 ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded overflow-hidden">
+<div class="h-full bg-tertiary rounded" style="width: 26%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- TARJETAS DE LOS NODOS N1, N2, N3 -->
+<section class="flex flex-col w-full gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Topología de Actores</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface-variant">OTP 27</span>
+</div>
+<!-- TARJETA NODO N1 (LÍDER) -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md gap-space-md shadow-sm border-l-4 border-l-tertiary relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center font-telemetry-mono text-[14px] font-bold shrink-0">
+            n1
+          </div>
+<div class="flex flex-col truncate">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface truncate font-semibold">n1@127.0.0.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42 procesos BEAM · ping 0.8ms</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[13px]">military_tech</span>
+<span class="">LÍDER</span>
+</div>
+<div class="flex items-center gap-1 font-telemetry-code text-telemetry-code text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="">OK</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Valor Contador</span>
+<span class="font-telemetry-metric text-[24px] text-primary font-bold" id="counter-val-n1">4838</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Versión Registro</span>
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface font-semibold mt-1" id="ver-val-n1">v149.8</span>
+</div>
+</div>
+</div>
+<!-- TARJETA NODO N2 (SEGUIDOR SINCRONIZADO) -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md gap-space-md shadow-sm border-l-4 border-l-tertiary relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded bg-surface-container-highest text-on-surface flex items-center justify-center font-telemetry-mono text-[14px] font-bold shrink-0">
+            n2
+          </div>
+<div class="flex flex-col truncate">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface truncate font-semibold">n2@127.0.0.1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">39 procesos BEAM · réplica activa</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[13px]">sync_alt</span>
+<span class="">SEGUIDOR</span>
+</div>
+<div class="flex items-center gap-1 font-telemetry-code text-telemetry-code text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="">OK</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Valor Contador</span>
+<span class="font-telemetry-metric text-[24px] text-primary font-bold" id="counter-val-n2">4838</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Versión Registro</span>
+<span class="font-telemetry-mono text-telemetry-mono text-tertiary font-semibold mt-1" id="ver-val-n2">v149.8 (Sync)</span>
+</div>
+</div>
+</div>
+<!-- TARJETA NODO N3 (SEGUIDOR CON RETRASO / ALERTA) -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md gap-space-md shadow-sm border-l-4 border-l-secondary-fixed-dim relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded bg-surface-container-highest text-on-surface flex items-center justify-center font-telemetry-mono text-[14px] font-bold shrink-0">
+            n3
+          </div>
+<div class="flex flex-col truncate">
+<span class="font-telemetry-mono text-telemetry-mono text-on-surface truncate font-semibold">n3@127.0.0.1</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Lag 1 versión · en resincronización</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[13px]">sync_alt</span>
+<span class="">SEGUIDOR</span>
+</div>
+<div class="flex items-center gap-1 font-telemetry-code text-telemetry-code text-secondary-fixed-dim font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+<span class="">ALERTA</span>
+</div>
+</div>
+</div>
+<!-- Alerta Específica de Latencia -->
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-high text-secondary-fixed-dim font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[17px]">warning</span>
+<span class="truncate">Latencia de replicación elevada (18.4 ms).</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Valor Contador</span>
+<span class="font-telemetry-metric text-[24px] text-on-surface-variant font-bold" id="counter-val-n3">4837</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Versión Registro</span>
+<span class="font-telemetry-mono text-telemetry-mono text-secondary-fixed-dim font-semibold mt-1" id="ver-val-n3">v149.7 (Sincronizando...)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- AUDITORÍA DE LOG DE EVENTOS ERLANG (MICRO TERMINAL) -->
+
+</div>
+<script>
+  (function initErlangClusterDemo() {
+    let counterValue = 4829;
+    let versionMajor = 148;
+    let versionMinor = 9;
+    let isPartitioned = false;
+
+    const incBtn = document.getElementById('increment-btn');
+    const partitionToggle = document.getElementById('partition-toggle');
+    const toggleLabel = document.getElementById('toggle-label');
+    const quorumBadge = document.getElementById('quorum-badge');
+    const quorumBadgeText = document.getElementById('quorum-badge-text');
+    const quorumNodesMetric = document.getElementById('quorum-nodes-metric');
+    const quorumStatusPill = document.getElementById('quorum-status-pill');
+    const quorumExplainer = document.getElementById('quorum-explainer');
+    const writeBanner = document.getElementById('write-banner');
+    const writeIcon = document.getElementById('write-icon');
+    const writeMsg = document.getElementById('write-msg');
+
+    const barN2 = document.getElementById('bar-n2');
+    const barN3 = document.getElementById('bar-n3');
+
+    const valN1 = document.getElementById('counter-val-n1');
+    const valN2 = document.getElementById('counter-val-n2');
+    const valN3 = document.getElementById('counter-val-n3');
+    const verN1 = document.getElementById('ver-val-n1');
+    const verN2 = document.getElementById('ver-val-n2');
+    const verN3 = document.getElementById('ver-val-n3');
+    const terminalLogs = document.getElementById('terminal-logs');
+
+    function appendLog(tag, tagClass, text) {
+      const d = new Date();
+      const timeStr = d.toTimeString().split(' ')[0] + '.' + String(d.getMilliseconds()).padStart(3, '0');
+      const div = document.createElement('div');
+      div.innerHTML = `<span class="text-outline">${timeStr}</span> <span class="${tagClass}">[${tag}]</span> ${text}`;
+      terminalLogs.prepend(div);
+      if (terminalLogs.children.length > 5) {
+        terminalLogs.removeChild(terminalLogs.lastChild);
+      }
+    }
+
+    incBtn.addEventListener('click', () => {
+      if (isPartitioned) {
+        // Flash negative feedback
+        writeBanner.classList.add('scale-[1.02]');
+        setTimeout(() => writeBanner.classList.remove('scale-[1.02]'), 150);
+        appendLog('raft_core', 'text-error', 'CAST RECHAZADO: Quórum insuficiente (1/3). Imposible replicar.');
+        return;
+      }
+
+      counterValue += 1;
+      versionMinor += 1;
+      if (versionMinor >= 10) {
+        versionMajor += 1;
+        versionMinor = 0;
+      }
+      const formattedVal = counterValue.toLocaleString('es-ES');
+      const verString = `v${versionMajor}.${versionMinor}`;
+
+      valN1.textContent = formattedVal;
+      valN2.textContent = formattedVal;
+      verN1.textContent = verString;
+      verN2.textContent = `${verString} (Sync)`;
+
+      // n3 lags slightly for playful realism
+      setTimeout(() => {
+        valN3.textContent = (counterValue - 1).toLocaleString('es-ES');
+        verN3.textContent = `v${versionMajor}.${Math.max(0, versionMinor - 1)} (Sincronizando...)`;
+      }, 300);
+
+      appendLog('gen_server', 'text-primary', `atomic_cast n1 +1 -> consenso completado (${counterValue})`);
+    });
+
+    partitionToggle.addEventListener('click', () => {
+      isPartitioned = !isPartitioned;
+
+      if (isPartitioned) {
+        // Drop quorum to 1/3
+        toggleLabel.textContent = 'Restaurar Red (3/3)';
+        quorumBadge.className = 'flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps transition-all duration-300';
+        quorumBadgeText.textContent = 'ESCRITURAS BLOQUEADAS';
+        quorumNodesMetric.textContent = '1/3';
+        quorumNodesMetric.className = 'font-telemetry-metric text-telemetry-metric text-error';
+        quorumStatusPill.textContent = 'SIN QUÓRUM (AISLADO)';
+        quorumStatusPill.className = 'font-label-caps text-label-caps text-error px-2 py-0.5 rounded bg-surface-container-high';
+        quorumExplainer.textContent = 'Advertencia de Split-Brain: Nodos n2 y n3 inalcanzables. Consenso deshabilitado.';
+
+        barN2.className = 'h-2 rounded bg-surface-container-highest transition-colors duration-300';
+        barN3.className = 'h-2 rounded bg-surface-container-highest transition-colors duration-300';
+
+        writeBanner.className = 'flex items-center gap-2 p-space-sm rounded-lg bg-error-container/30 text-error transition-all duration-300';
+        writeIcon.textContent = 'lock';
+        writeMsg.textContent = 'Escrituras bloqueadas: Sin quórum suficiente para garantizar consistencia distribuida.';
+
+        incBtn.classList.add('opacity-50', 'grayscale-[40%]');
+        appendLog('net_kernel', 'text-error', 'CRÍTICO: Partición de red simulada. Desconectado de n2 y n3.');
+      } else {
+        // Restore quorum to 3/3
+        toggleLabel.textContent = 'Aislar (1/3)';
+        quorumBadge.className = 'flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps transition-all duration-300';
+        quorumBadgeText.textContent = 'ACEPTA ESCRITURAS';
+        quorumNodesMetric.textContent = '3/3';
+        quorumNodesMetric.className = 'font-telemetry-metric text-telemetry-metric text-on-surface';
+        quorumStatusPill.textContent = 'MAYORÍA ACTIVA';
+        quorumStatusPill.className = 'font-label-caps text-label-caps text-tertiary px-2 py-0.5 rounded bg-surface-container-high';
+        quorumExplainer.textContent = 'Mayoría mínima requerida: 2 de 3 nodos para tolerar partición F=1.';
+
+        barN2.className = 'h-2 rounded bg-tertiary transition-colors duration-300';
+        barN3.className = 'h-2 rounded bg-tertiary transition-colors duration-300';
+
+        writeBanner.className = 'flex items-center gap-2 p-space-sm rounded-lg bg-tertiary-container/30 text-tertiary transition-all duration-300';
+        writeIcon.textContent = 'lock_open';
+        writeMsg.textContent = 'Escrituras habilitadas: El clúster cuenta con quórum mayoritario y consenso intacto.';
+
+        incBtn.classList.remove('opacity-50', 'grayscale-[40%]');
+        appendLog('epmd', 'text-tertiary', 'Red unificada: Nodos reconectados. Estado de quórum restaurado.');
+      }
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-surface-container-high/60"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] h-12 px-space-md rounded transition-colors group text-primary bg-surface-container-high/60" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">speed</span><span class="font-label-caps text-label-caps mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[44px] h-12 px-space-md rounded text-on-surface-variant transition-colors relative group" data-path="nodo-n1" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">dns</span><span class="absolute -top-1 -right-4 px-1 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[9px] uppercase tracking-tighter leading-none">Líder</span></div><span class="font-label-caps text-label-caps mt-0.5">Nodo n1</span></a><a class="flex flex-col items-center justify-center min-w-[44px] h-12 px-space-md rounded text-on-surface-variant transition-colors relative group" data-path="alertas" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute -top-1 -right-2 px-1 py-0.2 rounded bg-tertiary-container text-on-tertiary-container font-label-caps text-[9px] font-bold leading-none">0</span></div><span class="font-label-caps text-label-caps mt-0.5">Alertas</span></a></div></nav>
+
+
+
+</body></html>
