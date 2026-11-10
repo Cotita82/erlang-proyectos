@@ -48,7 +48,10 @@ handle_info({nodeup, Nodo}, #{miembros := Miembros, conectados := Conectados} = 
     true ->
       p15_cluster_de_2_3_nodos_eventos:registrar(nodo_reconectado, Nodo,
         lists:flatten(io_lib:format("~s se unio al cluster", [Nodo]))),
-      {noreply, cambiar(State#{conectados := lists:usort([Nodo | Conectados])})};
+      Nuevo = cambiar(State#{conectados := lists:usort([Nodo | Conectados])}),
+      %% Que el servidor pregunte las versiones de los demas (ver server.erl).
+      gen_server:cast(p15_cluster_de_2_3_nodos_server, sincronizar),
+      {noreply, Nuevo};
     false ->
       %% Un nodo que no es miembro no suma al quorum ni se registra.
       {noreply, State}
